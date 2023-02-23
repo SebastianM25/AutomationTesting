@@ -19,6 +19,7 @@ public class testHomePage extends BaseClass {
         WorkWithElements.clickElement(homePage.getdropdownAccount());
         WorkWithElements.clickElement(homePage.getSignUp());
         WorkWithElements.complete(homePage.getFirstName(), TextResources.firstname);
+
     }
 
 }

@@ -1,5 +1,4 @@
 package utilities;
-
 import org.apache.commons.lang3.SystemUtils;
 import org.junit.After;
 import org.junit.Before;
@@ -8,13 +7,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseClass {
 
-        //private static ThreadLocal<WebDriverInstance> driverInstance = new ThreadLocal<>();
+
         public WebDriver driver;
 
 
         String url = "https://www.phptravels.net/";
 
-        private DriversUtils driversPath = new DriversUtils();
+
 
     /*@Before
     public void setUpTestFireFox() {
@@ -29,8 +28,8 @@ public class BaseClass {
 
         @Before
         public void setUpTestChrome() {
-            System.setProperty("webdriver.chrome.driver", driversPath.getDriverDirPath() + "chromedriver" + driversPath.getDriverExtension());
-            System.setProperty("webdriver.chrome.whitelistedIps", "");
+            System.setProperty("webdriver.chrome.driver","/Users/sebastianmarius/Downloads/drivers/browsers/chrome/chromedriver_mac64/chromedriver");
+           // System.setProperty("webdriver.chrome.whitelistedIps", "");
             driver = new ChromeDriver();
             driver.get(url);
             if (SystemUtils.IS_OS_WINDOWS) {
